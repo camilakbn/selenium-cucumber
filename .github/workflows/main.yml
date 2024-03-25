@@ -22,8 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 123
+        id: setup-chrome
+      - run: |
+          ${{ steps.setup-chrome.outputs.chrome-path }} --latest
       - uses: actions/setup-node@v4
         with:
           node-version: 20
