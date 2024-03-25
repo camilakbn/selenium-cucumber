@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 123
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -24,6 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 123
       - uses: actions/setup-node@v4
         with:
           node-version: 20
