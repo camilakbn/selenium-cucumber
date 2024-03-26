@@ -14,3 +14,5 @@ Steps into creating a selenium-cucumber project using javascript:
 - If you run the test with the .js file empty (after creating the .feature), the system will give you a "basis" for your tests, so you copy it and do the steps needed, and you can also use selenium IDE extension on google chrome to map the elements of the website you will use;
 
 - To update the chrome version, type "npx webdriver-manager update";
+
+- To run only one test at a time, type ex.: "npm run test:loginValido";

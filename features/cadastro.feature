@@ -1,5 +1,6 @@
 Feature: Cadastro de usuário
 
+@cadastroUsuario
 Scenario: Cadastrar usuário
     Given o usuário acessa o menu de Cadastro
     When ele preenche os campos nome, email, senha, confirmação de senha e confirma

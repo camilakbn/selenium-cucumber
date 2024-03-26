@@ -4,7 +4,10 @@
   "description": "Steps into creating a selenium-cucumber project using javascript:",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html"
+    "test": "cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html",
+    "test:cadastroUsuario": "cucumber-js --tags @cadastroUsuario",
+    "test:loginValido": "cucumber-js --tags @loginValido",
+    "test:loginInvalido": "cucumber-js --tags @loginInvalido"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +18,7 @@
   },
   "dependencies": {
     "assert": "^2.1.0",
-    "chromedriver": "^123.0.0",
+    "chromedriver": "^122.0.0",
     "geckodriver": "^4.3.3",
     "selenium-webdriver": "^4.18.1"
   }
