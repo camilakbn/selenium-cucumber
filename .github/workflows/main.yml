@@ -21,13 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      #- uses: browser-actions/setup-chrome@v1
-      #  with:
-       #   chrome-version: 122
-      - uses: nanasess/setup-chromedriver@v2
-        with:
-          # Optional: do not specify to match Chrome's version
-          chromedriver-version: '122.0.6261.128'
       - uses: actions/setup-node@v4
         with:
           node-version: 20
